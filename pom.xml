@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>YShuai</groupId>
+  <artifactId>projet_test</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+ 
+  <name>ceri-m1-test-2017</name>
+  <url>https://github.com/yangshuai194/ceri-m1-test-2017.git</url>
+  <inceptionYear>2018</inceptionYear>
+    
+  <developers>
+    <developer>
+        <id>yang</id>
+        <name>Yang Shuai</name>
+        <email>yangshuai194@gmail.com</email>
+    </developer>
+  </developers>
+
+  <build>
+    <directory>ceri-m1-test-2017-master</directory>
+    <outputDirectory>ceri-m1-test-2017-master/classes</outputDirectory>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+    <testOutputDirectory>src/main/java/fr/univavignon/rodeo/api</testOutputDirectory>
+    <sourceDirectory>src/main/java/fr/univavignon/rodeo/api</sourceDirectory>
+    <scriptSourceDirectory>src/main/java/fr/univavignon/rodeo/api</scriptSourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/java/fr/univavignon/rodeo/api</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/java/fr/univavignon/rodeo/api</directory>
+      </testResource>
+    </testResources>
+  </build>
+
+
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
