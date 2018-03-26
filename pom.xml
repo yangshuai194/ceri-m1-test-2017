@@ -23,17 +23,17 @@
     <directory>ceri-m1-test-2017-master</directory>
     <outputDirectory>ceri-m1-test-2017-master/classes</outputDirectory>
     <finalName>${project.artifactId}-${project.version}</finalName>
-    <testOutputDirectory>src/main/java/fr/univavignon/rodeo/api</testOutputDirectory>
-    <sourceDirectory>src/main/java/fr/univavignon/rodeo/api</sourceDirectory>
-    <scriptSourceDirectory>src/main/java/fr/univavignon/rodeo/api</scriptSourceDirectory>
+    <testOutputDirectory>src/main/java/</testOutputDirectory>
+    <sourceDirectory>src/main/java/</sourceDirectory>
+    <scriptSourceDirectory>src/main/java/</scriptSourceDirectory>
     <resources>
       <resource>
-        <directory>src/main/java/fr/univavignon/rodeo/api</directory>
+        <directory>src/main/java/</directory>
       </resource>
     </resources>
     <testResources>
       <testResource>
-        <directory>src/test/java/fr/univavignon/rodeo/api</directory>
+        <directory>src/test/java/</directory>
       </testResource>
     </testResources>
   </build>
