@@ -49,14 +49,6 @@ public class IGameStateTest {
         //assertEquals(gameState.getEnvironment("Env1"),environment); 
 	}
 	
-	@Test(expected=IllegalArgumentException.class)
-	public void testGetSpecieLevel()
-	{
-		final IGameState gameState=getTestInstance();
-		gameState.getSpecieLevel(null);
-        //assertEquals(gameState.getEnvironment("Env1"),environment); 
-	}
-	
 	@Test
 	public void testGetProgression()
 	{
