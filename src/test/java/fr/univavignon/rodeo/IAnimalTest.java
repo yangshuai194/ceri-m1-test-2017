@@ -2,6 +2,7 @@ package fr.univavignon.rodeo;
 
 import static org.junit.Assert.*;
 
+import fr.univavignon.rodeo.imp.Animal;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -14,14 +15,16 @@ public class IAnimalTest {
 	
 	protected static IAnimal getTestInstance()
 	{
-		IAnimal animalMock=Mockito.mock(IAnimal.class);
-		Mockito.when(animalMock.getXP()).thenReturn(50);
-		Mockito.when(animalMock.isSecret()).thenReturn(true);
-		Mockito.when(animalMock.isEndangered()).thenReturn(true);
-		Mockito.when(animalMock.isBoss()).thenReturn(true);
+		IAnimal animalMock=new Animal(50,"animal",true,true,true);
 		return animalMock;
 	}
-	
+
+	@Test
+	public void testGetName(){
+		final IAnimal animal=getTestInstance();
+		assertEquals(animal.getName(),"animal");
+	}
+
 	@Test
 	public void testGetXP()
 	{

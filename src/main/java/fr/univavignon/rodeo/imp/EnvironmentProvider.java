@@ -145,11 +145,4 @@ public class EnvironmentProvider implements IEnvironmentProvider {
 		return flag;
 	}
 
-
-	public static void main (String [] args)
-	{
-		EnvironmentProvider ep = new EnvironmentProvider();
-		ep.loadCSV();
-		System.out.println(ep.listSpecie.size());
-	}
 }
