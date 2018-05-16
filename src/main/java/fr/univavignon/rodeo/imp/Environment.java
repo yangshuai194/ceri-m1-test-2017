@@ -19,7 +19,10 @@ public class Environment implements IEnvironment{
 	public Environment(String name, int area, List<ISpecie> species)
 	{
 		this.name=name;
-		this.area=area;
+		if(this.area<area)
+		{
+			this.area=area;
+		}
 		this.species=species;
 	}
 	

@@ -1,0 +1,461 @@
+Animal,Species,Class,Unlocked,XP Given
+Cape Buffalo,Buffalo,Base,Savannah 1,0
+Zebra,Zebra,Base,Savannah 1,0
+African Elephant,Elephant,Base,Savannah 1,0
+Ostrich,Ostrich,Base,Savannah 2,0
+Giraffe,Giraffe,Base,Savannah 3,0
+Vulture,Vulture,Base,Savannah 4,0
+Lion,Lion,Base,Savannah 5,0
+Wild Boar,Boar,Base,Jungle 1,0
+Western Gorilla,Gorilla,Base,Jungle 1,0
+Alligator,Alligator,Base,Jungle 1,0
+Hippo,Hippo,Base,Jungle 2,0
+Rhino,Rhino,Base,Jungle 3,0
+Tiger,Tiger,Base,Jungle 4,0
+Toucan,Toucan,Base,Jungle 5,0
+Mountain Goat,Goat,Base,Mountains 1,0
+Llama,Llama,Base,Mountains 1,0
+Brown Bear,Bear,Base,Mountains 1,0
+Gray Wolf,Wolf,Base,Mountains 2,0
+Yak,Yak,Base,Mountains 3,0
+Bald Eagle,Eagle,Base,Mountains 4,0
+Alpine Moose,Moose,Base,Mountains 5,0
+Merino Sheep,Sheep,Base,Outback 1,0
+Red Kangaroo,Kangaroo,Base,Outback 1,0
+Drop Bear,Drop Bear,Base,Outback 1,0
+Wombat,Wombat,Base,Outback 2,0
+Emu,Emu,Base,Outback 3,0
+Camel,Camel,Base,Outback 4,0
+Flying Fox,Flying Fox,Base,Outback 5,0
+Penguin,Penguin,Base,Tundra 1,0
+Common Seal,Seal,Base,Tundra 1,0
+Walrus,Walrus,Base,Tundra 1,0
+Arctic Hare,Rabbit,Base,Tundra 2,0
+Snowy Owl,Owl,Base,Tundra 3,0
+White Fox,Fox,Base,Tundra 4,0
+Polar Bear,Polar Bear,Base,Tundra 5,0
+Parasaurolophus,Parasaurolophus,Base,Jurassic 1,0
+Velociraptor,Raptor,Base,Jurassic 1,0
+Triceratops,Triceratops,Base,Jurassic 1,0
+Tyrannosaurus Rex,Tyrannosaurus Rex,Base,Jurassic 2,0
+Brontosaurus,Brontosaurus,Base,Jurassic 3,0
+Ankylosaurus,Ankylosaurus,Base,Jurassic 4,0
+Pterodactyl,Pterodactyl,Base,Jurassic 5,0
+Stegosaurus,Stegosaurus,Base,Jurassic 6,0
+Pegasus,Pegasus,Base,Olympus 1,0
+Ceryneian Hind,Hind,Base,Olympus 1,0
+Minotaur,Minotaur,Base,Olympus 1,0
+Griffin,Griffin,Base,Olympus 2,0
+Phoenix,Phoenix,Base,Olympus 3,0
+Dragon,Dragon,Base,Olympus 4,0
+Giant Turtle,Turtle,Base,Olympus 5,0
+Hydra,Hydra,Base,Olympus 6,0
+Ant,Ant,Base,Garden 1,0
+Grasshopper,Grasshopper,Base,Garden 1,0
+Spider,Spider,Base,Garden 1,0
+Pillbug,Pillbug,Base,Garden 2,0
+Dragonfly,Dragonfly,Base,Garden 3,0
+Forest Buffalo,Buffalo,Regular,Savannah 1,1
+Brazeb,Zebra,Regular,Savannah 1,1
+Mammoth,Elephant,Regular,Savannah 1,1
+Celebirdy,Ostrich,Regular,Savannah 2,1
+Girafferty,Giraffe,Regular,Savannah 3,1
+Egyptian Vulture,Vulture,Regular,Savannah 4,1
+Dande Lion,Lion,Regular,Savannah 5,1
+Indian Boar,Boar,Regular,Jungle 1,1
+Mountain Gorilla,Gorilla,Regular,Jungle 1,1
+Frogator,Alligator,Regular,Jungle 1,1
+Pygmy Hippo,Hippo,Regular,Jungle 2,1
+Hawaiino,Rhino,Regular,Jungle 3,1
+Liger,Tiger,Regular,Jungle 4,1
+Hornbill,Toucan,Regular,Jungle 5,1
+Viking Goat,Goat,Regular,Mountains 1,1
+Saltwater Llama,Llama,Regular,Mountains 1,1
+Bear Chieftain,Bear,Regular,Mountains 1,1
+Fire Wolf,Wolf,Regular,Mountains 2,1
+Skyunk,Yak,Regular,Mountains 3,1
+Knight Hawk,Eagle,Regular,Mountains 4,1
+Mossy Moose,Moose,Regular,Mountains 5,1
+Sheep in Wolf's Clothing,Sheep,Regular,Outback 1,1
+Kickboxeroo,Kangaroo,Regular,Outback 1,1
+Dropbear Dundee,Drop Bear,Regular,Outback 1,1
+Combat Wombat,Wombat,Regular,Outback 2,1
+Aviator Emu,Emu,Regular,Outback 3,1
+Camelflage,Camel,Regular,Outback 4,1
+Flying Box,Flying Fox,Regular,Outback 5,1
+Emperor Penguin,Penguin,Regular,Tundra 1,1
+Leopard Seal,Seal,Regular,Tundra 1,1
+Sea Cow,Walrus,Regular,Tundra 1,1
+Anne Bunny,Rabbit,Regular,Tundra 2,1
+Horned Owl,Owl,Regular,Tundra 3,1
+Faux News,Fox,Regular,Tundra 4,1
+Strawbeary,Polar Bear,Regular,Tundra 5,1
+Barrelophus,Parasaurolophus,Regular,Jurassic 1,1
+Feathered Raptor,Raptor,Regular,Jurassic 1,1
+Triceraclops,Triceratops,Regular,Jurassic 1,1
+T-Mex,Tyrannosaurus Rex,Regular,Jurassic 2,1
+Loch Ness Monster,Brontosaurus,Regular,Jurassic 3,1
+Wreck-o-saurus,Ankylosaurus,Regular,Jurassic 4,1
+Taurodactyl,Pterodactyl,Regular,Jurassic 5,1
+Sydney Operasaurus,Stegosaurus,Regular,Jurassic 6,1
+Peryton,Pegasus,Regular,Olympus 1,1
+Elaphoi Khrysokeroi,Hind,Regular,Olympus 1,1
+Satyr,Minotaur,Regular,Olympus 1,1
+Hippogriff,Griffin,Regular,Olympus 2,1
+Corvus,Phoenix,Regular,Olympus 3,1
+Colchian Dragon,Dragon,Regular,Olympus 4,1
+Black Turtle,Turtle,Regular,Olympus 5,1
+Naga,Hydra,Regular,Olympus 6,1
+Velvet Ant,Ant,Regular,Garden 1,1
+Phymateus Morbillosus,Grasshopper,Regular,Garden 1,1
+Redback Spider,Spider,Regular,Garden 1,1
+Medical Pillbug,Pillbug,Regular,Garden 2,1
+Sympetrum,Dragonfly,Regular,Garden 3,1
+Water Buffalo,Buffalo,Regular,Savannah 1,3
+Candicorn,Zebra,Regular,Savannah 1,3
+Earl of Phant,Elephant,Regular,Savannah 1,3
+Glam Rockstrich,Ostrich,Regular,Savannah 2,3
+Taco Jirafa,Giraffe,Regular,Savannah 3,3
+Viva Las Vulture,Vulture,Regular,Savannah 4,3
+Sabretooth Lion,Lion,Regular,Savannah 5,3
+Boaring,Boar,Regular,Jungle 1,3
+Quarterback Gorilla,Gorilla,Regular,Jungle 1,3
+Snorkadile,Alligator,Regular,Jungle 1,3
+Ballerina Hippo,Hippo,Regular,Jungle 2,3
+Apple Pieno,Rhino,Regular,Jungle 3,3
+Crouching Tiger,Tiger,Regular,Jungle 4,3
+Bluecan,Toucan,Regular,Jungle 5,3
+Aqua Goat,Goat,Regular,Mountains 1,4
+Pinata Llama,Llama,Regular,Mountains 1,4
+Honey Bear,Bear,Regular,Mountains 1,4
+Survivor Wolf,Wolf,Regular,Mountains 2,4
+Abominable Snow Yak,Yak,Regular,Mountains 3,4
+Eaglward Scissorwings,Eagle,Regular,Mountains 4,4
+Spruce Moose,Moose,Regular,Mountains 5,4
+Candylamb,Sheep,Regular,Outback 1,4
+Ranger Roo,Kangaroo,Regular,Outback 1,4
+Drop Bikie,Drop Bear,Regular,Outback 1,4
+Womcat,Wombat,Regular,Outback 2,4
+Emo,Emu,Regular,Outback 3,4
+Sinbad Camel,Camel,Regular,Outback 4,4
+Flying Foxie,Flying Fox,Regular,Outback 5,4
+Plague Doctor Penguin,Penguin,Regular,Tundra 1,4
+Banana Peal,Seal,Regular,Tundra 1,4
+Lawless Walrus,Walrus,Regular,Tundra 1,4
+Chocolate Bunny,Rabbit,Regular,Tundra 2,4
+Prowler,Owl,Regular,Tundra 3,4
+El Zorro,Fox,Regular,Tundra 4,4
+Polo Bear,Polar Bear,Regular,Tundra 5,4
+Crowbarolophus,Parasaurolophus,Regular,Jurassic 1,3
+Flossoraptor,Raptor,Regular,Jurassic 1,3
+Triceracops,Triceratops,Regular,Jurassic 1,3
+Sea-Rex,Tyrannosaurus Rex,Regular,Jurassic 2,3
+Diplojokus,Brontosaurus,Regular,Jurassic 3,3
+Stingasaurus,Ankylosaurus,Regular,Jurassic 4,3
+Careodactyl,Pterodactyl,Regular,Jurassic 5,3
+Stitchosaurus,Stegosaurus,Regular,Jurassic 6,3
+Pegasus in Training,Pegasus,Regular,Olympus 1,3
+Oh Deer Lord,Hind,Regular,Olympus 1,3
+Cyclops,Minotaur,Regular,Olympus 1,3
+Chimera,Griffin,Regular,Olympus 2,3
+Stymphalian Bird,Phoenix,Regular,Olympus 3,3
+Dragon of Helios,Dragon,Regular,Olympus 4,3
+Aristurtle,Turtle,Regular,Olympus 5,3
+Ophiotaurus,Hydra,Regular,Olympus 6,3
+Turtle Ant,Ant,Regular,Garden 1,3
+Katydid,Grasshopper,Regular,Garden 1,3
+Peacock Spider,Spider,Regular,Garden 1,3
+Bastketball Bug,Pillbug,Regular,Garden 2,3
+Yellow Waxtail,Dragonfly,Regular,Garden 3,3
+Bison,Buffalo,Regular,Savannah 1,14
+Bufferrari,Buffalo,Level 9,Savannah 1,14
+Punky Zeb,Zebra,Regular,Savannah 1,14
+Legend of Zebra,Zebra,Level 9,Savannah 1,14
+Psychedelephant,Elephant,Regular,Savannah 1,14
+Fire Hydrophant,Elephant,Level 9,Savannah 1,14
+Jellephant,Elephant,Regular,Savannah 1,14
+Ostri Chevalier,Ostrich,Regular,Savannah 2,14
+Mosstrich,Ostrich,Level 9,Savannah 2,14
+Ostwitch,Ostrich,Regular,Savannah 2,14
+Highballer,Giraffe,Regular,Savannah 3,14
+Giraffatar,Giraffe,Level 9,Savannah 3,14
+Vulture Capitalist,Vulture,Regular,Savannah 4,14
+Dracorian,Vulture,Level 9,Savannah 4,14
+Gryphon,Lion,Regular,Savannah 5,14
+Maasai Lion,Lion,Level 9,Savannah 5,14
+Borc,Boar,Regular,Jungle 1,10
+Wild Snore,Boar,Level 9,Jungle 1,10
+Guerilla,Gorilla,Regular,Jungle 1,10
+Thorilla,Gorilla,Level 9,Jungle 1,10
+Bunny Gator,Alligator,Regular,Jungle 1,10
+Crookodile,Alligator,Level 9,Jungle 1,10
+Hip Hop Hippo,Hippo,Regular,Jungle 2,10
+Tawaret,Hippo,Level 9,Jungle 2,10
+Feline'o,Rhino,Regular,Jungle 3,10
+Marcel Rhineau,Rhino,Level 9,Jungle 3,10
+Slimenoceros,Rhino,Regular,Jungle 3,10
+White Tiger,Tiger,Regular,Jungle 4,10
+Pink Panthera,Tiger,Level 9,Jungle 4,10
+Moocan,Toucan,Regular,Jungle 5,10
+Kazoocan,Toucan,Level 9,Jungle 5,10
+Go-Nut,Goat,Regular,Mountains 1,12
+Heterozygoat,Goat,Level 9,Mountains 1,12
+Ghoast,Goat,Regular,Mountains 1,12
+Elizabethan Llama,Llama,Regular,Mountains 1,12
+Barack Obllama,Llama,Level 9,Mountains 1,12
+Bearthday Cake,Bear,Regular,Mountains 1,12
+TIME LOCKER BEAR,Bear,Level 9,Mountains 1,12
+Big Bad Wolf,Wolf,Regular,Mountains 2,12
+TIME LOCKER DOG,Wolf,Level 9,Mountains 2,12
+Gnarlyak Tree,Yak,Regular,Mountains 3,12
+Afro Dizzy Yak,Yak,Level 9,Mountains 3,12
+Count Batcula,Eagle,Regular,Mountains 4,12
+Flight Attendant,Eagle,Level 9,Mountains 4,12
+Mesa Moose,Moose,Regular,Mountains 5,12
+Chocolate Mousse,Moose,Level 9,Mountains 5,12
+Lady Baabaa,Sheep,Regular,Outback 1,12
+Lamburgerini,Sheep,Level 9,Outback 1,12
+Kangollipop,Kangaroo,Regular,Outback 1,12
+Kangapoodle,Kangaroo,Level 9,Outback 1,12
+Pennywise the Koala,Drop Bear,Regular,Outback 1,12
+The Hon. Lady Dropbear,Drop Bear,Level 9,Outback 1,12
+Wombaby,Wombat,Regular,Outback 2,12
+Wombamelon,Wombat,Level 9,Outback 2,12
+Wombatman,Wombat,Regular,Outback 2,12
+Emusician,Emu,Regular,Outback 3,12
+Tropical Emu,Emu,Level 9,Outback 3,12
+Volcamelno,Camel,Regular,Outback 4,12
+Humpback Camel,Camel,Level 9,Outback 4,12
+Vampire Bat,Flying Fox,Regular,Outback 5,12
+Flying Socks,Flying Fox,Level 9,Outback 5,12
+Pilot Penguin,Penguin,Regular,Tundra 1,12
+Hockey Puckguin,Penguin,Level 9,Tundra 1,12
+Security Seal,Seal,Regular,Tundra 1,12
+Eskimo Seal,Seal,Level 9,Tundra 1,12
+Warrus,Walrus,Regular,Tundra 1,12
+Belle of the Ballrus,Walrus,Level 9,Tundra 1,12
+Gunny,Rabbit,Regular,Tundra 2,12
+Funny Bunny,Rabbit,Level 9,Tundra 2,12
+Barn Owl,Owl,Regular,Tundra 3,12
+Whooodunnit,Owl,Level 9,Tundra 3,12
+Kitsune,Fox,Regular,Tundra 4,12
+Jukefox,Fox,Level 9,Tundra 4,12
+Solar Bear,Polar Bear,Regular,Tundra 5,12
+Bowler Bear,Polar Bear,Level 9,Tundra 5,12
+Parasol-o-lophus,Parasaurolophus,Regular,Jurassic 1,5
+Mascaralophus,Parasaurolophus,Regular,Jurassic 1,8
+Naptor,Raptor,Regular,Jurassic 1,5
+Belleociraptor,Raptor,Regular,Jurassic 1,8
+Skyceratops,Triceratops,Regular,Jurassic 1,5
+Chimeratops,Triceratops,Regular,Jurassic 1,8
+G-Rex,Tyrannosaurus Rex,Regular,Jurassic 2,5
+T-Hex,Tyrannosaurus Rex,Regular,Jurassic 2,8
+Hipstersaurus,Brontosaurus,Regular,Jurassic 3,5
+Hotdogosaurus,Brontosaurus,Regular,Jurassic 3,8
+Ankylawsaurus,Ankylosaurus,Regular,Jurassic 4,5
+Tankylosaurus,Ankylosaurus,Regular,Jurassic 4,8
+Pharaohdactyl,Pterodactyl,Regular,Jurassic 5,5
+Swearodactyl,Pterodactyl,Regular,Jurassic 5,8
+Nachosaurus,Stegosaurus,Regular,Jurassic 6,5
+Thesaurus,Stegosaurus,Regular,Jurassic 6,8
+Picarus,Pegasus,Regular,Olympus 1,5
+Peglegasus,Pegasus,Regular,Olympus 1,8
+TV HIND,Hind,Regular,Olympus 1,5
+Beehind,Hind,Regular,Olympus 1,8
+Minotaur Matador,Minotaur,Regular,Olympus 1,5
+Minotorious Cowboy,Minotaur,Regular,Olympus 1,8
+Hippalectryon,Griffin,Regular,Olympus 2,5
+Manticore,Griffin,Regular,Olympus 2,8
+Aetos Dios,Phoenix,Regular,Olympus 3,5
+Alectryon,Phoenix,Regular,Olympus 3,8
+Y Ddraig Goch,Dragon,Regular,Olympus 4,5
+Nidhogg,Dragon,Regular,Olympus 4,8
+Ninja Turtle,Turtle,Regular,Olympus 5,5
+World Turtle,Turtle,Regular,Olympus 5,8
+Ladon,Hydra,Regular,Olympus 6,5
+Amphisbaena,Hydra,Regular,Olympus 6,8
+Honey Ant,Ant,Regular,Garden 1,5
+Termite,Ant,Regular,Garden 1,8
+Koppie Foam Grasshopper,Grasshopper,Regular,Garden 1,5
+Young Grasshopper,Grasshopper,Regular,Garden 1,8
+8 Spotted Crab Spider,Spider,Regular,Garden 1,5
+Golden Orbweaver Spider,Spider,Regular,Garden 1,8
+Tyre Bug,Pillbug,Regular,Garden 2,5
+Gear Bug,Pillbug,Regular,Garden 2,8
+Dragonwhy,Dragonfly,Regular,Garden 3,5
+Damselfly,Dragonfly,Regular,Garden 3,8
+Kerfuffle'o,Buffalo,Regular,Savannah 1,25
+Diabuffalo,Buffalo,Secret,Savannah 1,3
+Buff the Magic Dragon,Buffalo,Endangered,Savannah 1,30
+Elektro Zebra,Zebra,Regular,Savannah 1,25
+Trojan Zebra,Zebra,Secret,Savannah 5,25
+Zegasus,Zebra,Endangered,Savannah 1,30
+Kirin,Zebra,Event,Savannah 1,30
+Tootyphant,Elephant,Regular,Savannah 1,25
+Skelephant,Elephant,Boss,Savannah 1,25
+Blessing Elephant,Elephant,Event,Savannah 1,30
+Ostrich of Hearts,Ostrich,Regular,Savannah 2,25
+Bosstrich,Ostrich,Boss,Savannah 2,25
+Kungfu Ostrich,Ostrich,Event,Savannah 2,30
+Giraxxus,Giraffe,Regular,Savannah 3,25
+UFG,Giraffe,Boss,Savannah 3,25
+World's Tallest Sheep,Giraffe,Endangered,Savannah 3,30
+Giraffemas Tree,Giraffe,Event,Savannah 3,30
+Pop Vulture,Vulture,Regular,Savannah 4,25
+Vulture-on,Vulture,Secret,Savannah 4,5
+Volture,Vulture,Endangered,Savannah 4,30
+Scarecrow,Vulture,Event,Savannah 4,25
+Cryin' Lion,Lion,Regular,Savannah 5,25
+Le'Ion Chef,Lion,Secret,Savannah 5,14
+Nian Monster,Lion,Endangered,Savannah 5,25
+Beautiful Boar,Boar,Regular,Jungle 1,25
+Hog Rider,Boar,Boss,Jungle 1,25
+BoarBQ,Boar,Endangered,Jungle 1,30
+Frankenswine,Boar,Event,Jungle 1,25
+Lawrilla,Gorilla,Regular,Jungle 1,25
+Volcanorilla,Gorilla,Boss,Jungle 1,25
+Gorill-uck,Gorilla,Endangered,Jungle 1,25
+Bridezilla,Alligator,Regular,Jungle 1,25
+Cockadoodile,Alligator,Secret,Jungle 1,3
+Termigator,Alligator,Endangered,Jungle 1,30
+Hippiepotamus,Hippo,Regular,Jungle 2,25
+Platypotamus,Hippo,Secret,Jungle 2,6
+Sabretooth Hippo,Hippo,Endangered,Jungle 2,30
+Skynoceros,Rhino,Regular,Jungle 3,25
+Dhinoceros,Rhino,Secret,Jungle 3,25
+Rhino Warrior,Rhino,Event,Jungle 3,25
+H.R. Tiger,Tiger,Regular,Jungle 4,25
+Tiger Lily,Tiger,Boss,Jungle 4,25
+Tigermoth,Tiger,Endangered,Jungle 4,30
+Santa Claws,Tiger,Event,Jungle 4,25
+Brewcan,Toucan,Regular,Jungle 5,25
+Threecan,Toucan,Secret,Jungle 5,6
+Bazookan,Toucan,Endangered,Jungle 5,30
+Mk.II Stealth Goat,Goat,Regular,Mountains 1,25
+Two-nicorn,Goat,Boss,Mountains 1,25
+Butterfllama,Llama,Regular,Mountains 1,25
+Hyper Light Llama,Llama,Boss,Mountains 1,25
+Alpaca Cracker,Llama,Endangered,Mountains 1,25
+Beaver Bear,Bear,Regular,Mountains 1,25
+SU-24 Bearoplane,Bear,Secret,Mountains 1,8
+Vlambeer,Bear,Endangered,Mountains 1,25
+Giant Panda,Bear,Event,Mountains 1,25
+Jabberwolfy,Wolf,Regular,Mountains 2,25
+One-eyed Wolfbeard,Wolf,Boss,Mountains 2,25
+Cerberus,Wolf,Endangered,Mountains 2,25
+Thriller Wolf,Wolf,Event,Mountains 2,25
+Battle Yak,Yak,Regular,Mountains 3,25
+Gearpunk Yak,Yak,Secret,Mountains 3,10
+Zodiyak,Yak,Endangered,Mountains 3,25
+Greater Eaglemoth,Eagle,Regular,Mountains 4,25
+Robin Should,Eagle,Secret,Mountains 5,3
+Regal Eagle,Eagle,Endangered,Mountains 4,25
+Monstroose,Moose,Regular,Mountains 5,25
+Dark Mousse,Moose,Secret,Mountains 5,15
+Zeus Moose,Moose,Endangered,Mountains 5,25
+Reindeer in Training,Moose,Event,Mountains 5,25
+Little Bo Sheep,Sheep,Regular,Outback 1,25
+Conan the Baabaarian,Sheep,Boss,Outback 1,25
+Lambembert Cheese,Sheep,Endangered,Outback 1,25
+Skibby Dippy Doo,Kangaroo,Regular,Outback 1,25
+Kan Guru,Kangaroo,Boss,Outback 1,25
+Mongol Roo,Kangaroo,Endangered,Outback 1,25
+Rustle Ko,Drop Bear,Regular,Outback 1,25
+Bunyip,Drop Bear,Secret,Outback 1,6
+Professor Dropbear,Drop Bear,Endangered,Outback 1,25
+Womdrian,Wombat,Regular,Outback 2,25
+Bombat,Wombat,Secret,Outback 2,3
+Dame Emu,Emu,Regular,Outback 3,25
+Fiery Phoemu,Emu,Boss,Outback 3,25
+Cock-a-doodle-emu,Emu,Endangered,Outback 3,25
+Camelot,Camel,Regular,Outback 4,25
+Cameleon,Camel,Secret,Outback 5,15
+Mystic Camel,Camel,Endangered,Outback 4,25
+Fruit Bat,Flying Fox,Regular,Outback 5,25
+Spying Fox,Flying Fox,Secret,Outback 5,5
+Cute Bat,Flying Fox,Endangered,Outback 5,25
+Penghis Khan,Penguin,Regular,Tundra 1,25
+Fairy Penguin,Penguin,Secret,Tundra 5,30
+Pengdjinn,Penguin,Endangered,Tundra 1,30
+Harp Seal,Seal,Regular,Tundra 1,25
+Navy Seal,Seal,Boss,Tundra 1,25
+Seal of Fortune,Seal,Endangered,Tundra 1,30
+Walrus Viking,Walrus,Regular,Tundra 1,25
+Sabre Tooth Walrus,Walrus,Secret,Tundra 1,6
+Wealthy Walrus,Walrus,Endangered,Tundra 1,30
+Grass Hopper,Rabbit,Regular,Tundra 2,25
+Snow Bunny,Rabbit,Secret,Tundra 2,8
+Crabbit,Rabbit,Endangered,Tundra 2,30
+Opera Bunny,Rabbit,Event,Tundra 2,30
+Robin Hoot,Owl,Regular,Tundra 3,25
+Owlgebra,Owl,Boss,Tundra 3,25
+Knight Owl,Owl,Endangered,Tundra 3,30
+Goldifox,Fox,Regular,Tundra 4,25
+Clockwork Fox,Fox,Secret,Tundra 4,8
+Sunset Twinkle,Fox,Endangered,Tundra 4,30
+Patroller Bear,Polar Bear,Regular,Tundra 5,25
+Roller Bear,Polar Bear,Boss,Tundra 5,25
+Lumbearjack,Polar Bear,Endangered,Tundra 5,30
+Oarolophus,Parasaurolophus,Boss,Jurassic 1,25
+Explorerlophus,Parasaurolophus,Regular,Jurassic 1,25
+Sporeolophus,Parasaurolophus,Regular,Jurassic 1,25
+Philosoraptor,Raptor,Secret,Jurassic 1,12
+Wraptor,Raptor,Regular,Jurassic 1,25
+Grim Raptor,Raptor,Regular,Jurassic 1,25
+Geisharatops,Triceratops,Boss,Jurassic 1,25
+Medium-Rare-atops,Triceratops,Regular,Jurassic 1,25
+Knightmaratops,Triceratops,Regular,Jurassic 1,25
+T-Flex,Tyrannosaurus Rex,Secret,Jurassic 2,5
+Tyrantosaurus Rex,Tyrannosaurus Rex,Regular,Jurassic 2,25
+T-Wrecks,Tyrannosaurus Rex,Regular,Jurassic 2,25
+Deeplodocus,Brontosaurus,Secret,Jurassic 5,12
+Pegasaurus,Brontosaurus,Regular,Jurassic 3,25
+Hydrasaurus,Brontosaurus,Regular,Jurassic 3,25
+Anglerosaurus,Ankylosaurus,Secret,Jurassic 4,12
+Plantylosaurus,Ankylosaurus,Regular,Jurassic 4,25
+Dankylosaurus,Ankylosaurus,Regular,Jurassic 4,25
+Hairodactyl,Pterodactyl,Boss,Jurassic 5,25
+Fairydactyl,Pterodactyl,Regular,Jurassic 5,25
+Petrodactyl,Pterodactyl,Regular,Jurassic 5,25
+Stegosawrus,Stegosaurus,Secret,Jurassic 6,12
+Crystalsaurus,Stegosaurus,Regular,Jurassic 6,25
+Sparkosaurus,Stegosaurus,Regular,Jurassic 6,25
+Pegazeus,Pegasus,Boss,Olympus 1,25
+Trojan Horse 2.0,Pegasus,Regular,Olympus 1,25
+Unicorn,Pegasus,Regular,Olympus 1,25
+Hindsight,Hind,Secret,Olympus 1,12
+Golden Hinde,Hind,Regular,Olympus 1,25
+Mi-24 Hind,Hind,Regular,Olympus 1,25
+Mine-o-taur,Minotaur,Secret,Olympus 1,12
+Spartan Bullwark,Minotaur,Regular,Olympus 1,25
+Anubis,Minotaur,Regular,Olympus 1,25
+Riffin,Griffin,Boss,Olympus 2,25
+Spiffin',Griffin,Regular,Olympus 2,25
+Griffin Door,Griffin,Regular,Olympus 2,25
+Threenix,Phoenix,Secret,Olympus 3,12
+Avian Attorney,Phoenix,Regular,Olympus 3,25
+Remix Phoenix,Phoenix,Regular,Olympus 3,25
+Quetzalcoatl,Dragon,Secret,Olympus 4,12
+Cockatrice,Dragon,Regular,Olympus 4,25
+Zmey Gorynych,Dragon,Regular,Olympus 4,25
+Fruit Tartle,Turtle,Secret,Olympus 5,12
+Flippin' Burger,Turtle,Regular,Olympus 5,25
+Shellebration,Turtle,Regular,Olympus 5,25
+Cerastes,Hydra,Boss,Olympus 6,25
+Basilisk,Hydra,Regular,Olympus 6,25
+Jörmungandr,Hydra,Regular,Olympus 6,25
+Cant,Ant,Secret,Garden 1,5
+Fire Ant,Ant,Regular,Garden 1,20
+Queen Ant,Ant,Regular,Garden 1,30
+Cricket,Grasshopper,Boss,Garden 1,12
+Glasshopper,Grasshopper,Regular,Garden 1,20
+Phantom of the Orthoptera,Grasshopper,Regular,Garden 1,30
+Mirror Spider,Spider,Secret,Garden 1,5
+Spiny Orb Weaver,Spider,Regular,Garden 1,20
+Web Developer,Spider,Regular,Garden 1,30
+Sushi Bug,Pillbug,Boss,Garden 2,12
+Armapillo,Pillbug,Regular,Garden 2,20
+Frillbug,Pillbug,Regular,Garden 2,30
+Dragoon Fly,Dragonfly,Secret,Garden 3,5
+Dragonfruit Fly,Dragonfly,Regular,Garden 3,20
+Dragonboat Fly,Dragonfly,Regular,Garden 3,30
