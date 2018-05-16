@@ -12,7 +12,7 @@ public class GameState implements IGameState{
 	/** **/
 	private	Map<ISpecie, SpecieLevel> levels;
 
-	private Map<Integer, ISpecie> totalXp;
+	private Map<ISpecie, Integer> totalXp;
 
 	private List<IAnimal> animalsCaugut;
 
@@ -27,13 +27,10 @@ public class GameState implements IGameState{
 	/**
 	 * @param name
 	 */
-	public GameState(String name)
+	public GameState(String name,int progression)
 	{
 		this.name=name;
-		currentArea=1;
-		envProv=new EnvironmentProvider();
-		currentEnvironment=envProv.getEnvironment("Savannah");
-		progression=0;
+		progression=progression;
 	}
 	
 	
@@ -103,13 +100,23 @@ public class GameState implements IGameState{
 			throw new IllegalArgumentException();
 		}
 		else{
-			for (Map.Entry<ISpecie, SpecieLevel> entry : levels.entrySet())
+			Integer xp=0;
+			for (Map.Entry<ISpecie, Integer> entry : totalXp.entrySet())
 			{
 				if (entry.getKey().getName().equals(specie.getName()))
 				{
-					return entry.getValue();
+					for(int i=0;i<entry.getKey().getAnimals().size();++i)
+					{
+						xp += entry.getKey().getAnimals().get(i).getXP();
+					}
+					if (xp >=0 && xp< 25) return SpecieLevel.NOVICE;
+					if (xp >=25 && xp< 150) return SpecieLevel.WRANGLER;
+					if (xp >=150 && xp< 600) return SpecieLevel.CHAMPION;
+					if (xp >=600) return SpecieLevel.MASTER;
+					break;
 				}
 			}
+
 		}
 		throw new IllegalArgumentException();
 	}
@@ -119,8 +126,8 @@ public class GameState implements IGameState{
 		// TODO Auto-generated method stub
 		double animal = (double) (animalsCaugut.size()/envProv.listAnimal.size());
 		int currentSpecieLvl=0;
-		for ( Integer key : totalXp.keySet() ) {
-			currentSpecieLvl+=key;
+		for ( Map.Entry<ISpecie, Integer> entry : totalXp.entrySet() ) {
+			currentSpecieLvl+=entry.getValue();
 		}
 		double specielvl = (double) (currentSpecieLvl/envProv.listSpecie.size()*600);
 		int avg = (int) ((animal+specielvl)/2)*100;

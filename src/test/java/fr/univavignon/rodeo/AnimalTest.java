@@ -2,6 +2,7 @@ package fr.univavignon.rodeo;
 
 import static org.junit.Assert.*;
 
+import fr.univavignon.rodeo.imp.Animal;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -10,16 +11,19 @@ import org.mockito.runners.MockitoJUnitRunner;
 import fr.univavignon.rodeo.api.*;
 
 @RunWith(MockitoJUnitRunner.class)
-public class IAnimalTest {
+public class AnimalTest {
 	
 	protected static IAnimal getTestInstance()
 	{
-		IAnimal animalMock=Mockito.mock(IAnimal.class);
-		Mockito.when(animalMock.getXP()).thenReturn(50);
-		Mockito.when(animalMock.isSecret()).thenReturn(true);
-		Mockito.when(animalMock.isEndangered()).thenReturn(true);
-		Mockito.when(animalMock.isBoss()).thenReturn(true);
+		IAnimal animalMock=new Animal( 30,"Buff the Magic Dragon",
+				false, true, false);
 		return animalMock;
+	}
+
+	@Test
+	public void testGetName(){
+		final IAnimal animal=getTestInstance();
+		assertEquals(animal.getName(),"animal");
 	}
 
 	@Test
@@ -33,7 +37,7 @@ public class IAnimalTest {
 	public void testIsSecret()
 	{
 		final IAnimal animal=getTestInstance();
-        assertEquals(animal.isSecret(),true); 
+        assertEquals(animal.isSecret(),false);
 	}
 	
 	@Test
@@ -47,7 +51,7 @@ public class IAnimalTest {
 	public void testIsBoss()
 	{
 		final IAnimal animal=getTestInstance();
-        assertEquals(animal.isBoss(),true);
+        assertEquals(animal.isBoss(),false);
 	}
 	
 }
