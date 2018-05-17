@@ -57,10 +57,8 @@ public class GameState implements IGameState{
 		{
 			throw new IllegalStateException();
 		}
-		else
-		{
-			this.currentArea++;
-		}
+		this.currentArea++;
+
 	}
 
 	@Override
@@ -138,13 +136,12 @@ public class GameState implements IGameState{
 				if (entry.getKey().getName().equals(specie.getName()))
 				{
 					xp=entry.getValue();
-					if (xp >=0 && xp< 25) return SpecieLevel.NOVICE;
-					if (xp >=25 && xp< 150) return SpecieLevel.WRANGLER;
-					if (xp >=150 && xp< 600) return SpecieLevel.CHAMPION;
-					if (xp >=600) return SpecieLevel.MASTER;
 				}
 			}
-
+			if (xp >=0 && xp< 25) return SpecieLevel.NOVICE;
+			if (xp >=25 && xp< 150) return SpecieLevel.WRANGLER;
+			if (xp >=150 && xp< 600) return SpecieLevel.CHAMPION;
+			if (xp >=600) return SpecieLevel.MASTER;
 		}
 		return SpecieLevel.NOVICE;
 	}

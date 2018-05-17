@@ -28,7 +28,7 @@ public class GameStateTest {
 	}
 
 	@Test(expected=IllegalStateException.class)
-	public void testExploreArea()
+	public void testExploreAreaExcep()
 	{
 		final IGameState gameState=getTestInstance();
 		gameState.exploreArea();
@@ -51,6 +51,13 @@ public class GameStateTest {
 		final IGameState gameState=getTestInstance();
 		IAnimal anim=new Animal(3,"bu",true,true,true);
 		gameState.catchAnimal(anim);
+	}
+
+	@Test(expected=IllegalArgumentException.class)
+	public void testGetSpecieLevelNUll()
+	{
+		final IGameState gameState=getTestInstance();
+		gameState.getSpecieLevel(null);
 	}
 
 	@Test
