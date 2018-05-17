@@ -1,4 +1,6 @@
 package fr.univavignon.rodeo.imp;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -10,27 +12,33 @@ public class GameState implements IGameState{
 	private int progression;
 
 	/** **/
-	private	Map<ISpecie, SpecieLevel> levels;
+	private	Map<ISpecie, SpecieLevel> levels=new HashMap<ISpecie,SpecieLevel>();
 
-	private Map<ISpecie, Integer> totalXp;
+	private Map<ISpecie, Integer> totalXp=new HashMap<ISpecie,Integer>();
 
-	private List<IAnimal> animalsCaugut;
+	private List<IAnimal> animalsCaugut = new ArrayList<>();
 
-	private int currentArea;
+	private int currentArea=1;
 	
 	private IEnvironment currentEnvironment;
 
-	private EnvironmentProvider envProv;
+	private EnvironmentProvider envProv=new EnvironmentProvider();
 
-	public GameState() {}
-	
+	public GameState() {
+
+	}
+
 	/**
+	 *
 	 * @param name
+	 * @param progression
 	 */
 	public GameState(String name,int progression)
 	{
 		this.name=name;
 		progression=progression;
+		currentEnvironment=envProv.getEnvironment("Savannah");
+
 	}
 	
 	
@@ -44,6 +52,9 @@ public class GameState implements IGameState{
 	public void exploreArea() throws IllegalStateException {
 		// TODO Auto-generated method stub
 		// check current area+1
+		System.out.println(currentEnvironment.getName());
+		System.out.println(currentEnvironment.getSpecies());
+		System.out.println(currentEnvironment.getAreas());
 		if (currentArea+1>currentEnvironment.getAreas())
 		{
 			throw new IllegalStateException();
@@ -58,6 +69,7 @@ public class GameState implements IGameState{
 	public void catchAnimal(IAnimal animal) throws IllegalArgumentException,
 			IllegalStateException {
 		// TODO Auto-generated method stub
+
 		if (animal==null){
 			throw new IllegalArgumentException();
 		}
@@ -78,6 +90,7 @@ public class GameState implements IGameState{
 				}
 				if (!flag) throw new IllegalStateException();
 			}
+
 		}
 		boolean flag=false;
 		for(int i =0;i<animalsCaugut.size();++i)
@@ -118,19 +131,25 @@ public class GameState implements IGameState{
 			}
 
 		}
-		throw new IllegalArgumentException();
+		return SpecieLevel.NOVICE;
 	}
 
 	@Override
 	public int getProgression() {
 		// TODO Auto-generated method stub
-		double animal = (double) (animalsCaugut.size()/envProv.listAnimal.size());
+		double animal=0;
 		int currentSpecieLvl=0;
-		for ( Map.Entry<ISpecie, Integer> entry : totalXp.entrySet() ) {
-			currentSpecieLvl+=entry.getValue();
+		double specielvl =0;
+		if (envProv.listAnimal.size()!=0 && envProv.listSpecie.size() !=0)
+		{
+			animal = (double) (animalsCaugut.size()/envProv.listAnimal.size());
+			for ( Map.Entry<ISpecie, Integer> entry : totalXp.entrySet() ) {
+				currentSpecieLvl+=entry.getValue();
+			}
+			specielvl = (double) (currentSpecieLvl/envProv.listSpecie.size()*600);
 		}
-		double specielvl = (double) (currentSpecieLvl/envProv.listSpecie.size()*600);
 		int avg = (int) ((animal+specielvl)/2)*100;
+		this.progression=avg;
 		return this.progression;
 	}
 

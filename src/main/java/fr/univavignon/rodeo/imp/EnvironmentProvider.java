@@ -28,6 +28,7 @@ public class EnvironmentProvider implements IEnvironmentProvider {
 		this.listEnvironment=new ArrayList<IEnvironment>();
 		this.availableEnvironments=new ArrayList<String>();
 		this.envArea=new ArrayList<String>();
+		loadCSV();
 	}
 
 	private void loadCSV()
@@ -108,41 +109,69 @@ public class EnvironmentProvider implements IEnvironmentProvider {
 	private void addData(String animal, String specie, String className, String envir, String area, String exp) {
 		Animal anim=new Animal(Integer.parseInt(exp),animal,className.equals("Secret"),
 								className.equals("Endangered"),className.equals("Boss"));
-		this.listAnimal.add(anim);
+
+		/*this.listAnimal.add(anim);
 		if(!containSpecie(specie)) {
 			Specie sp=new Specie(specie,Integer.parseInt(area),this.listAnimal);
 			this.listSpecie.add(sp);
 		}
-		if(!containEnvironment(envir)) {
-			Environment env = new Environment(envir, Integer.parseInt(area), this.listSpecie);
+		*/
+		// check if environment exist already
+			// check if list specie contains specie
+		//System.out.println(containEnvironment(envir));
+		if(containEnvironment(envir)==-1) {
+			Environment env = new Environment(envir, Integer.parseInt(area), new ArrayList<ISpecie>());
 			this.listEnvironment.add(env);
+		}
+		else
+		{
+			//System.out.println(containEnvironment(envir));
+			List<ISpecie> ls=this.listEnvironment.get(containEnvironment(envir)).getSpecies();
+			if(containSpecie(specie)==-1) {
+				Specie sp=new Specie(specie,Integer.parseInt(area),new ArrayList<IAnimal>());
+				this.listEnvironment.get(containEnvironment(envir)).getSpecies().add(sp);
+				//System.out.println(this.listEnvironment.get(containEnvironment(envir)).getName()+"  "+this.listEnvironment.get(containEnvironment(envir)).getSpecies().size());
+			}
+			else
+			{
+				//System.out.println(/*ls.get(containSpecie(specie)).getName()+*/ls.size()+" -> "+containSpecie(specie));
+				List<IAnimal> la = this.listEnvironment.get(containEnvironment(envir)).getSpecies().get(containSpecie(specie)).getAnimals();
+				//this.listEnvironment.get(containEnvironment(envir)).getSpecies().get(containSpecie(specie)).getAnimals().add(anim);
+				la.add(anim);
+				//System.out.println(this.listEnvironment.get(containEnvironment(envir)).getSpecies().get(containSpecie(specie)).getAnimals().size());
+			}
 		}
 	}
 
-	private boolean containEnvironment(String envir) {
-		boolean flag=false;
+	private int containEnvironment(String envir) {
+		int flag=-1;
 		for (int i=0;i<this.listEnvironment.size();++i)
 		{
 			if (this.listEnvironment.get(i).getName().equals(envir))
 			{
-				flag=true;
+				flag=i;
 				break;
 			}
 		}
 		return flag;
 	}
 
-	private boolean containSpecie(String specie) {
-		boolean flag=false;
-		for (int i=0;i<this.listSpecie.size();++i)
+	private int containSpecie(String specie) {
+		int flag=-1;
+		for (int i=0;i<this.listEnvironment.size();++i)
 		{
-			if (this.listSpecie.get(i).getName().equals(specie))
-			{
-				flag=true;
-				break;
+			for (int j =0;j<this.listEnvironment.get(i).getSpecies().size();++j){
+				if (this.listEnvironment.get(i).getSpecies().get(j).getName().equals(specie))
+				{
+					flag=j;
+					break;
+				}
 			}
 		}
 		return flag;
 	}
-
+	public static void main(String [] args)
+	{
+		EnvironmentProvider e =new EnvironmentProvider();
+	}
 }

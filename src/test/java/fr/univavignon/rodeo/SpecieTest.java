@@ -44,7 +44,7 @@ public class SpecieTest {
 	public void testGetArea()
 	{
 		final ISpecie specie=getTestInstance();
-        assertEquals(specie.getArea(),50); 
+        assertEquals(specie.getArea(),1);
 	}
 
 	@Test

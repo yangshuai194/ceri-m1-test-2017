@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import fr.univavignon.rodeo.imp.GameState;
 import fr.univavignon.rodeo.imp.GameStateProvider;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -15,11 +16,12 @@ public class GameStateProviderTest {
 
 	public static IGameState gameState=GameStateTest.getTestInstance();
 	public static IGameState gameStateNull = null;
+	private GameStateProvider gameStateProvider;
 
 	protected static IGameStateProvider getTestInstance() throws IllegalStateException,IllegalArgumentException
 	{
 		IGameStateProvider gameStateProviderMock=new GameStateProvider();
-		gameState = new GameState("testGameState",0);
+		gameState = new GameState("player",0);
 		return gameStateProviderMock;
 	}
 
@@ -42,7 +44,8 @@ public class GameStateProviderTest {
 	public void testGet()
 	{
 		final IGameStateProvider gameStateProvider=getTestInstance();
-        assertEquals(gameStateProvider.get("player"),gameState);
+		gameStateProvider.save(gameState);
+		assertEquals(gameState.getName(), gameStateProvider.get("player").getName());
 	}
 
 	

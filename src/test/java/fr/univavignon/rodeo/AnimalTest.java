@@ -23,14 +23,14 @@ public class AnimalTest {
 	@Test
 	public void testGetName(){
 		final IAnimal animal=getTestInstance();
-		assertEquals(animal.getName(),"animal");
+		assertEquals(animal.getName(),"Buff the Magic Dragon");
 	}
 
 	@Test
 	public void testGetXP()
 	{
 		final IAnimal animal=getTestInstance();
-        assertEquals(animal.getXP(),50); 
+        assertEquals(animal.getXP(),30);
 	}
 	
 	@Test
