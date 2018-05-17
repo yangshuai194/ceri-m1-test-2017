@@ -69,7 +69,6 @@ public class GameStateTest {
 		assertEquals(gameState.getSpecieLevel(tmp),SpecieLevel.NOVICE);
 		IAnimal animal = new Animal( 30,"Buff the Magic Dragon", false, true, false);
 		gameState.catchAnimal(animal);
-		//System.out.println(gameState.getSpecieLevel(tmp));
 		assertEquals(gameState.getSpecieLevel(specie),SpecieLevel.WRANGLER);
 		for(int i=0;i<5;i++)
 		{
@@ -83,13 +82,15 @@ public class GameStateTest {
 		assertEquals(gameState.getSpecieLevel(specie),SpecieLevel.MASTER);
 	}
 
-
-
 	@Test
 	public void testGetProgression()
 	{
 		final IGameState gameState=getTestInstance();
-        assertEquals(gameState.getProgression(),0);
+        //assertEquals(gameState.getProgression(),0);
+		IAnimal animal = new Animal( 30,"Buff the Magic Dragon", false, true, false);
+		gameState.catchAnimal(animal);
+		gameState.getProgression();
+
 	}
 
 }

@@ -128,6 +128,7 @@ public class EnvironmentProvider implements IEnvironmentProvider {
 				List<IAnimal> la = this.listEnvironment.get(containEnvironment(envir)).getSpecies().get(containSpecie(specie)).getAnimals();
 				//this.listEnvironment.get(containEnvironment(envir)).getSpecies().get(containSpecie(specie)).getAnimals().add(anim);
 				la.add(anim);
+				this.listAnimal.add(anim);
 				//System.out.println(this.listEnvironment.get(containEnvironment(envir)).getSpecies().get(containSpecie(specie)).getAnimals().size());
 			}
 		}

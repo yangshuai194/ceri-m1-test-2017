@@ -24,10 +24,6 @@ public class GameState implements IGameState{
 
 	private EnvironmentProvider envProv=new EnvironmentProvider();
 
-	public GameState() {
-
-	}
-
 	/**
 	 *
 	 * @param name
@@ -103,7 +99,6 @@ public class GameState implements IGameState{
 			}
 		}
 		if (!flag) animalsCaugut.add(animal);
-
 		if (totalXp.size()==0)
 		{
 			totalXp.put(tmp2,animal.getXP());
@@ -118,7 +113,6 @@ public class GameState implements IGameState{
 				}
 			}
 		}
-		//System.out.println(totalXp.get(tmp2));
 	}
 
 	@Override
@@ -149,19 +143,8 @@ public class GameState implements IGameState{
 	@Override
 	public int getProgression() {
 		// TODO Auto-generated method stub
-		double animal=0;
-		int currentSpecieLvl=0;
-		double specielvl =0;
-		if (envProv.listAnimal.size()!=0 && envProv.listSpecie.size() !=0)
-		{
-			animal = (double) (animalsCaugut.size()/envProv.listAnimal.size());
-			for ( Map.Entry<ISpecie, Integer> entry : totalXp.entrySet() ) {
-				currentSpecieLvl+=entry.getValue();
-			}
-			specielvl = (double) (currentSpecieLvl/envProv.listSpecie.size()*600);
-		}
-		int avg = (int) ((animal+specielvl)/2)*100;
-		this.progression=avg;
+		int caught = animalsCaugut.size();
+		this.progression = (int) Math.round((caught / this.envProv.listAnimal.size())*100);
 		return this.progression;
 	}
 

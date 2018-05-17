@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57d018cd-a5dc-4b83-aea5-39aacae3d9d5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/EnvironmentProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/EnvironmentProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateTest.java" afterDir="false" />
     </list>
@@ -16,20 +16,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameStateTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameStateTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="343">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+            <state relative-caret-position="208">
+              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnvironmentProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/EnvironmentProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="130" column="42" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -63,10 +72,10 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/GameStateProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateProviderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/EnvironmentTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/EnvironmentProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/EnvironmentProviderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/EnvironmentProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/GameState.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateTest.java" />
       </list>
     </option>
   </component>
@@ -189,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EnvironmentProviderTest">
+  <component name="RunManager" selected="JUnit.GameStateTest">
     <configuration name="EnvironmentProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.univavignon.rodeo.imp.EnvironmentProvider" />
       <module name="projet_test" />
@@ -343,10 +352,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameStateTest" />
         <item itemvalue="JUnit.EnvironmentProviderTest" />
         <item itemvalue="JUnit.EnvironmentTest" />
         <item itemvalue="JUnit.GameStateTest.testGetSpecieLevel" />
-        <item itemvalue="JUnit.GameStateTest" />
         <item itemvalue="Application.EnvironmentProvider" />
       </list>
     </recent_temporary>
@@ -365,35 +374,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EnvironmentTest - 2018.05.17 at 20h 59m 30s.xml">
-      <configuration name="EnvironmentTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 42m 00s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 00m 51s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 42m 43s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 01m 09s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 43m 02s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 02m 02s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 43m 18s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 04m 08s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 43m 29s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 04m 32s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 43m 47s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 06m 44s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 44m 08s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 07m 18s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 44m 14s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 09m 07s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 44m 58s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EnvironmentProviderTest - 2018.05.17 at 21h 09m 14s.xml">
-      <configuration name="EnvironmentProviderTest" configurationId="JUnit" />
+    <history-entry file="GameStateTest - 2018.05.17 at 21h 45m 42s.xml">
+      <configuration name="GameStateTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -408,12 +417,12 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3296355" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3296355" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3296355" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24959612" />
       <window_info id="Learn" order="2" weight="0.32956383" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -634,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/EnvironmentProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/EnvironmentProviderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -648,17 +650,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/EnvironmentProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="336">
+          <caret line="130" column="42" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/univavignon/rodeo/imp/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+        <state relative-caret-position="208">
+          <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/univavignon/rodeo/GameStateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
