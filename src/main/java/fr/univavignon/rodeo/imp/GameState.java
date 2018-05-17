@@ -52,9 +52,7 @@ public class GameState implements IGameState{
 	public void exploreArea() throws IllegalStateException {
 		// TODO Auto-generated method stub
 		// check current area+1
-		System.out.println(currentEnvironment.getName());
-		System.out.println(currentEnvironment.getSpecies());
-		System.out.println(currentEnvironment.getAreas());
+
 		if (currentArea+1>currentEnvironment.getAreas())
 		{
 			throw new IllegalStateException();
@@ -74,9 +72,10 @@ public class GameState implements IGameState{
 			throw new IllegalArgumentException();
 		}
 		// check if animal exist in this currentarea
+		boolean flag2=false;
+		ISpecie tmp2=null;
 		for(int i=0;i<currentEnvironment.getSpecies().size();++i)
 		{
-			boolean flag=false;
 			ISpecie tmp = currentEnvironment.getSpecies().get(i);
 			if (tmp.getArea()==currentArea)
 			{
@@ -84,14 +83,18 @@ public class GameState implements IGameState{
 				{
 					if(tmp.getAnimals().get(j).getName().equals(animal.getName()))
 					{
-						flag=true;
+						//System.out.println(tmp.getAnimals().get(j).getName()+"---"+animal.getName());
+						flag2=true;
+						tmp2=tmp;
 						break;
 					}
 				}
-				if (!flag) throw new IllegalStateException();
+				if (flag2) break;
 			}
-
 		}
+		if (flag2==false) throw new IllegalStateException();
+
+
 		boolean flag=false;
 		for(int i =0;i<animalsCaugut.size();++i)
 		{
@@ -102,6 +105,22 @@ public class GameState implements IGameState{
 			}
 		}
 		if (!flag) animalsCaugut.add(animal);
+
+		if (totalXp.size()==0)
+		{
+			totalXp.put(tmp2,animal.getXP());
+		}
+		else
+		{
+			for (Map.Entry<ISpecie, Integer> entry : totalXp.entrySet())
+			{
+				if (entry.getKey().getName().equals(tmp2.getName()))
+				{
+					totalXp.put(entry.getKey(),entry.getValue()+animal.getXP());
+				}
+			}
+		}
+		//System.out.println(totalXp.get(tmp2));
 	}
 
 	@Override
@@ -118,15 +137,11 @@ public class GameState implements IGameState{
 			{
 				if (entry.getKey().getName().equals(specie.getName()))
 				{
-					for(int i=0;i<entry.getKey().getAnimals().size();++i)
-					{
-						xp += entry.getKey().getAnimals().get(i).getXP();
-					}
+					xp=entry.getValue();
 					if (xp >=0 && xp< 25) return SpecieLevel.NOVICE;
 					if (xp >=25 && xp< 150) return SpecieLevel.WRANGLER;
 					if (xp >=150 && xp< 600) return SpecieLevel.CHAMPION;
 					if (xp >=600) return SpecieLevel.MASTER;
-					break;
 				}
 			}
 

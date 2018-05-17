@@ -173,5 +173,12 @@ public class EnvironmentProvider implements IEnvironmentProvider {
 	public static void main(String [] args)
 	{
 		EnvironmentProvider e =new EnvironmentProvider();
+		for (int i =0;i<e.getEnvironment("Savannah").getSpecies().size();++i)
+		{
+			for (int j=0;j<e.getEnvironment("Savannah").getSpecies().get(i).getAnimals().size();++j)
+			{
+				System.out.println(e.getEnvironment("Savannah").getSpecies().get(i).getAnimals().get(j).getName());
+			}
+		}
 	}
 }

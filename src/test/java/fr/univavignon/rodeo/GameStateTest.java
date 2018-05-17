@@ -52,28 +52,30 @@ public class GameStateTest {
 		IAnimal anim=new Animal(3,"bu",true,true,true);
 		gameState.catchAnimal(anim);
 	}
-	/*
+
 	@Test
 	public void testGetSpecieLevel()
 	{
 		final IGameState gameState=getTestInstance();
 		List l = Arrays.asList(new Animal(1,"Forest Buffalo", false, false, false));
 		Specie tmp = new Specie("Buffalo",1,l);
-		assertEquals(gameState.getSpecieLevel(specie),SpecieLevel.NOVICE);
+		assertEquals(gameState.getSpecieLevel(tmp),SpecieLevel.NOVICE);
 		IAnimal animal = new Animal( 30,"Buff the Magic Dragon", false, true, false);
+		gameState.catchAnimal(animal);
+		//System.out.println(gameState.getSpecieLevel(tmp));
 		assertEquals(gameState.getSpecieLevel(specie),SpecieLevel.WRANGLER);
 		for(int i=0;i<5;i++)
 		{
 			gameState.catchAnimal(animal);
 		}
 		assertEquals(gameState.getSpecieLevel(specie),SpecieLevel.CHAMPION);
-		for(int i=0;i<10;i++)
+		for(int i=0;i<20;i++)
 		{
 			gameState.catchAnimal(animal);
 		}
 		assertEquals(gameState.getSpecieLevel(specie),SpecieLevel.MASTER);
 	}
-	*/
+
 
 
 	@Test
