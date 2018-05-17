@@ -69,16 +69,6 @@ public class EnvironmentProvider implements IEnvironmentProvider {
 			throw new IllegalStateException(e);
 		}
 	}
-
-	/**
-	 * @param availableEnvironments
-	 * @param iEnvironment
-	 */
-	public EnvironmentProvider(List<String> availableEnvironments, IEnvironment iEnvironment)
-	{
-		this.availableEnvironments=availableEnvironments;
-		this.iEnvrionment=iEnvrionment;
-	}
 	
 	@Override
 	public List<String> getAvailableEnvironments() {
@@ -170,15 +160,5 @@ public class EnvironmentProvider implements IEnvironmentProvider {
 		}
 		return flag;
 	}
-	public static void main(String [] args)
-	{
-		EnvironmentProvider e =new EnvironmentProvider();
-		for (int i =0;i<e.getEnvironment("Savannah").getSpecies().size();++i)
-		{
-			for (int j=0;j<e.getEnvironment("Savannah").getSpecies().get(i).getAnimals().size();++j)
-			{
-				System.out.println(e.getEnvironment("Savannah").getSpecies().get(i).getAnimals().get(j).getName());
-			}
-		}
-	}
+
 }

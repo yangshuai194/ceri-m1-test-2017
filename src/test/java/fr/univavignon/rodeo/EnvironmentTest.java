@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import fr.univavignon.rodeo.imp.Environment;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -22,9 +23,7 @@ public class EnvironmentTest {
 
 	protected static IEnvironment getTestInstance()
 	{
-		IEnvironment environmentMock=Mockito.mock(IEnvironment.class);
-		Mockito.when(environmentMock.getAreas()).thenReturn(50);
-		Mockito.when(environmentMock.getSpecies()).thenReturn(listSpecie);
+		IEnvironment environmentMock=new Environment("Savannah",1,listSpecie);
 		return environmentMock;
 	}
 	
@@ -32,7 +31,7 @@ public class EnvironmentTest {
 	public void testGetAreas()
 	{
 		final IEnvironment environment=getTestInstance();
-        assertEquals(environment.getAreas(),50); 
+        assertEquals(environment.getAreas(),1);
 	}
 
 	@Test

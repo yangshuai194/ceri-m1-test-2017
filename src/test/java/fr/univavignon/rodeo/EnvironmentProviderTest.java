@@ -4,6 +4,9 @@ import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.List;
+
+import fr.univavignon.rodeo.imp.Environment;
+import fr.univavignon.rodeo.imp.EnvironmentProvider;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -13,14 +16,14 @@ import fr.univavignon.rodeo.api.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class EnvironmentProviderTest {
-	public static List<String> listAvailableEnv=Arrays.asList("Env1","Env2");
+	public static List<String> listAvailableEnv=Arrays.asList("Savannah", "Jungle", "Mountains", "Outback", "Tundra",
+																"Jurassic", "Olympus", "Garden");
 	public static IEnvironment environment;
 	
 	protected static IEnvironmentProvider getTestInstance()
 	{
-		IEnvironmentProvider environmentProviderMock=Mockito.mock(IEnvironmentProvider.class);
-		Mockito.when(environmentProviderMock.getAvailableEnvironments()).thenReturn(listAvailableEnv);
-		Mockito.when(environmentProviderMock.getEnvironment("Env1")).thenReturn(environment);
+		IEnvironmentProvider environmentProviderMock=new EnvironmentProvider();
+		environment=((EnvironmentProvider) environmentProviderMock).listEnvironment.get(1);
 		return environmentProviderMock;
 	}
 	
@@ -28,14 +31,21 @@ public class EnvironmentProviderTest {
 	public void testGetAvailableEnvironments()
 	{
 		final IEnvironmentProvider environmentProvider=getTestInstance();
-        assertEquals(environmentProvider.getAvailableEnvironments(),listAvailableEnv); 
+        assertEquals(environmentProvider.getAvailableEnvironments(),listAvailableEnv);
 	}
 
 	@Test
 	public void testGetEnvironment()
 	{
 		final IEnvironmentProvider environmentProvider=getTestInstance();
-        assertEquals(environmentProvider.getEnvironment("Env1"),environment); 
+        assertEquals(environmentProvider.getEnvironment("Jungle"),environment);
+	}
+
+	@Test(expected=IllegalArgumentException.class)
+	public void testGetEnvironmentNull()
+	{
+		final IEnvironmentProvider environmentProvider=getTestInstance();
+		environmentProvider.getEnvironment(null);
 	}
 	
 }
