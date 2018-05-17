@@ -2,6 +2,11 @@
 ## Groupe : M1 ILSEN Classique
 # ceri-m2-test
 
+[![CircleCI](https://circleci.com/gh/yangshuai194/ceri-m1-test-2017.svg?style=svg)](https://circleci.com/gh/yangshuai194/ceri-m1-test-2017)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f4c8d511093e45f082b04f0c0d336b2b)](https://www.codacy.com/app/yangshuai194/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yangshuai194/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
+[![codecov](https://codecov.io/gh/yangshuai194/ceri-m1-test-2017/branch/master/graph/badge.svg)](https://codecov.io/gh/yangshuai194/ceri-m1-test-2017)
+
+
 ## Resources
 
 ### Cours
@@ -18,8 +23,4 @@
 ### External
 
 - [JUnit 5 documentation](http://junit.org/junit5/docs/current/user-guide)
-
-[![CircleCI](https://circleci.com/gh/yangshuai194/ceri-m1-test-2017.svg?style=svg)](https://circleci.com/gh/yangshuai194/ceri-m1-test-2017)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f4c8d511093e45f082b04f0c0d336b2b)](https://www.codacy.com/app/yangshuai194/ceri-m1-test-2017?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yangshuai194/ceri-m1-test-2017&amp;utm_campaign=Badge_Grade)
-[![codecov](https://codecov.io/gh/yangshuai194/ceri-m1-test-2017/branch/master/graph/badge.svg)](https://codecov.io/gh/yangshuai194/ceri-m1-test-2017)
 
